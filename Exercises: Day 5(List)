@@ -1,0 +1,159 @@
+# Declare an empty list
+empty_list = []
+
+# Declare a list with more than 5 items
+my_list = [1, 2, 3, 4, 5, 6, 7]
+
+# Find the length of your list
+list_length = len(my_list)
+
+# Get the first item, the middle item, and the last item of the list
+first_item = my_list[0]
+middle_item = my_list[len(my_list)//2]
+last_item = my_list[-1]
+
+# Declare a list called mixed_data_types
+mixed_data_types = ['Your Name', 25, 175.5, 'Married', 'Your Address']
+
+# Declare a list variable named it_companies
+it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+# Print the list using print()
+print(it_companies)
+
+# Print the number of companies in the list
+num_companies = len(it_companies)
+print(f"Number of companies: {num_companies}")
+
+# Print the first, middle, and last company
+first_company = it_companies[0]
+middle_company = it_companies[len(it_companies)//2]
+last_company = it_companies[-1]
+
+print(f"First Company: {first_company}")
+print(f"Middle Company: {middle_company}")
+print(f"Last Company: {last_company}")
+
+# Print the list after modifying one of the companies
+it_companies[2] = 'UpdatedCompany'
+print(it_companies)
+
+# Add an IT company to it_companies
+it_companies.append('NewCompany')
+
+# Insert an IT company in the middle of the companies list
+it_companies.insert(len(it_companies)//2, 'MiddleCompany')
+
+# Change one of the it_companies names to uppercase (IBM excluded!)
+it_companies[4] = it_companies[4].upper()
+
+# Join the it_companies with a string '#; '
+joined_companies = '#; '.join(it_companies)
+print(joined_companies)
+
+# Check if a certain company exists in the it_companies list
+company_to_check = 'Microsoft'
+if company_to_check in it_companies:
+    print(f"{company_to_check} exists in the list.")
+
+# Sort the list using sort() method
+it_companies.sort()
+
+# Reverse the list in descending order using reverse() method
+it_companies.reverse()
+
+# Slice out the first 3 companies from the list
+first_three_companies = it_companies[:3]
+
+# Slice out the last 3 companies from the list
+last_three_companies = it_companies[-3:]
+
+# Slice out the middle IT company or companies from the list
+middle_company_index = len(it_companies)//2
+middle_companies = it_companies[middle_company_index-1:middle_company_index+2]
+
+# Remove the first IT company from the list
+it_companies.pop(0)
+
+# Remove the middle IT company or companies from the list
+it_companies.pop(len(it_companies)//2)
+
+# Remove the last IT company from the list
+it_companies.pop()
+
+# Remove all IT companies from the list
+it_companies.clear()
+
+# Destroy the IT companies list
+del it_companies
+# Define the lists
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node', 'Express', 'MongoDB']
+
+# Join the lists
+full_stack = front_end + back_end
+
+# Print the joined list
+print("Joined List:", full_stack)
+
+# Copy the joined list
+full_stack_copy = full_stack.copy()
+
+# Insert Python and SQL after Redux
+redux_index = full_stack_copy.index('Redux')
+full_stack_copy.insert(redux_index + 1, 'Python')
+full_stack_copy.insert(redux_index + 2, 'SQL')
+
+# Print the modified copy
+print("Modified Copy:", full_stack_copy)
+
+# List of student ages
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# Sort the list and find the min and max age
+sorted_ages = sorted(ages)
+min_age = min(sorted_ages)
+max_age = max(sorted_ages)
+
+# Add the min age and the max age again to the list
+ages.extend([min_age, max_age])
+
+# Find the median age
+middle_index = len(sorted_ages) // 2
+median_age = (sorted_ages[middle_index] + sorted_ages[-(middle_index + 1)]) / 2
+
+# Find the average age
+average_age = sum(ages) / len(ages)
+
+# Find the range of the ages
+age_range = max_age - min_age
+
+# Compare the value of (min - average) and (max - average), use abs() method
+min_average_diff = abs(min_age - average_age)
+max_average_diff = abs(max_age - average_age)
+
+# Print results for the student ages
+print("Sorted Ages:", sorted_ages)
+print("Min Age:", min_age)
+print("Max Age:", max_age)
+print("Updated Ages List:", ages)
+print("Median Age:", median_age)
+print("Average Age:", average_age)
+print("Age Range:", age_range)
+print("Difference (min - average):", min_average_diff)
+print("Difference (max - average):", max_average_diff)
+
+# List of countries
+countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+
+# Find the middle country(ies) in the countries list
+middle_country_index = len(countries) // 2
+middle_countries = [countries[middle_country_index]] if len(countries) % 2 != 0 else [countries[middle_country_index - 1], countries[middle_country_index]]
+
+# Divide the countries list into two equal lists or one more country for the first half
+first_half, *scandic_countries = countries[:3], countries[3:]
+
+# Print results for the countries
+print("Middle Country(ies):", middle_countries)
+print("First Half:", first_half)
+print("Scandic Countries:", scandic_countries)  
