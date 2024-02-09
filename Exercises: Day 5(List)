@@ -13,7 +13,7 @@ middle_item = my_list[len(my_list)//2]
 last_item = my_list[-1]
 
 # Declare a list called mixed_data_types
-mixed_data_types = ['Your Name', 25, 175.5, 'Married', 'Your Address']
+mixed_data_types = ['husen kurshi', 25, 175.5, 'UNMarried', 'surat']
 
 # Declare a list variable named it_companies
 it_companies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
