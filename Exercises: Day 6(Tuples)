@@ -2,8 +2,8 @@
 empty_tuple = ()
 
 # Create a tuple containing names of sisters and brothers
-sisters = ('Sister1', 'Sister2')
-brothers = ('Brother1', 'Brother2')
+sisters = ('riya', 'jiya')
+brothers = ('shuresh', 'manish')
 
 # Join brothers and sisters tuples and assign it to siblings
 siblings = brothers + sisters
