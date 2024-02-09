@@ -2,7 +2,7 @@
 dog = {}
 
 # Add name, color, breed, legs, age to the dog dictionary
-dog['name'] = 'Buddy'
+dog['name'] = 'tommy'
 dog['color'] = 'Brown'
 dog['breed'] = 'Golden Retriever'
 dog['legs'] = 4
@@ -10,15 +10,15 @@ dog['age'] = 3
 
 # Create a student dictionary
 student = {
-    'first_name': 'John',
-    'last_name': 'Doe',
+    'first_name': 'husen',
+    'last_name': 'kureshi',
     'gender': 'Male',
     'age': 21,
     'marital_status': 'Single',
     'skills': ['Python', 'JavaScript'],
-    'country': 'USA',
-    'city': 'New York',
-    'address': '123 Main St'
+    'country': 'india',
+    'city': 'gujarat',
+    'address': 'abc'
 }
 
 # Get the length of the student dictionary
