@@ -1,0 +1,108 @@
+1. Reverse the given string
+my_string = "Hello, World!"
+reversed_string = my_string[::-1]
+print("1. Reversed String:", reversed_string)
+
+ 2. Replace some characters of the string with another character without using a loop.
+modified_string = my_string.replace('l', 'x')
+print("2. Modified String:", modified_string)
+
+3. Find whether the character is in the given string or not.
+char_to_find = 'o'
+if char_to_find in my_string:
+    print(f"3. '{char_to_find}' is present in the string.")
+else:
+    print(f"3. '{char_to_find}' is not present in the string.")
+
+4. Create tuple, list, and set and convert them into different strings.
+my_tuple = (1, 2, 3)
+my_list = [4, 5, 6]
+my_set = {7, 8, 9}
+
+tuple_str = str(my_tuple)
+list_str = str(my_list)
+set_str = str(my_set)
+
+print("4. Tuple:", tuple_str, "List:", list_str, "Set:", set_str)
+
+5. Convert all string characters to upper and lower case and split it with different methods.
+upper_case = my_string.upper()
+lower_case = my_string.lower()
+
+split_whitespace = my_string.split()
+split_comma = my_string.split(',')
+
+print("5. Uppercase:", upper_case, "Lowercase:", lower_case, "Split (whitespace):", split_whitespace, "Split (comma):", split_comma)
+
+6. Perform the following operations to the tuple and the list
+tuple_max = max(my_tuple)
+tuple_min = min(my_tuple)
+tuple_len = len(my_tuple)
+tuple_sum = sum(my_tuple)
+
+list_max = max(my_list)
+list_min = min(my_list)
+list_len = len(my_list)
+list_sum = sum(my_list)
+
+print("6. Tuple - Max:", tuple_max, "Min:", tuple_min, "Length:", tuple_len, "Sum:", tuple_sum)
+print("    List - Max:", list_max, "Min:", list_min, "Length:", list_len, "Sum:", list_sum)
+
+7. Copy one list to another list without using the copy command.
+list1 = [1, 2, 3]
+list2 = list1[:]
+
+print("7. Copied list:", list2)
+
+8. Perform tasks with a dictionary.
+student = {'name': 'John', 'age': 20, 'grade': 'A'}
+print("8. Student's age:", student['age'])
+
+student['grade'] = 'B'
+
+if 'gender' in student:
+    print("   Gender is present in the dictionary.")
+else:
+    print("   Gender is not present in the dictionary.")
+
+9. Perform tasks with sets.
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+union_set = set1.union(set2)
+intersection_set = set1.intersection(set2)
+difference_set = set1.difference(set2)
+is_subset = set1.issubset(set2)
+
+print("9. Union:", union_set, "Intersection:", intersection_set, "Difference:", difference_set, "Is Subset:", is_subset)
+
+10. More tasks with dictionaries and sets.
+subjects = {'math': {'John', 'Alice'}, 'science': {'Bob', 'Alice'}}
+
+subjects['math'].add('Emma')
+subjects['science'].remove('Bob')
+
+common_students = subjects['math'].intersection(subjects['science'])
+print("10. Common students in Math and Science:", common_students)
+
+11. Create two lists, one containing elements at even indices and the other containing elements at odd indices from the original list.
+original_list = [1, 2, 3, 4, 5, 6]
+even_indices_list = original_list[::2]
+odd_indices_list = original_list[1::2]
+
+print("11. Even indices list:", even_indices_list, "Odd indices list:", odd_indices_list)
+12. Use tuple packing and unpacking to swap the values of two variables without using a temporary variable.
+a = 5
+b = 10
+a, b = b, a
+print("12. Swapped values (a, b):", a, b)
+13. Check if a given list is a palindrome using slicing.
+my_list = [1, 2, 3, 2, 1]
+is_palindrome = my_list == my_list[::-1]
+print("13. Is the list a palindrome?", is_palindrome)
+
+14. Concatenate two tuples without using the + operator.
+tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+concatenated_tuple = tuple1 + tuple2
+print("14. Concatenated tuple:", concatenated_tuple)
